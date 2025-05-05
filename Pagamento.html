@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <style>
+       body {
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    background-size: 400% 400%;
+    color: aliceblue;
+    animation: animarFundo 10s infinite alternate;
+}
+@keyframes animarFundo {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        input, button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e03e00;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pagamento</h1>
+        <a href="http://127.0.0.1:5500/My%20project/Pagina%20principal.html#acao">Voltar para Loja</a>
+    </header>
+    <div class="container">
+        <h2>Finalizar Compra</h2>
+        <form>
+            <input type="text" placeholder="Nome no Cartão" required><br>
+            <input type="text" placeholder="Número do Cartão" required><br>
+            <input type="text" placeholder="Data de Expiração" required><br>
+            <input type="text" placeholder="CVV" required><br>
+            <button type="submit">Pagar Agora</button>
+        </form>
+    </div>
+</body>
+</html>
